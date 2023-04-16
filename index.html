@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Link para o WhatsApp</title>
-</head>
-<body>
-    
-    <h1>Gerador de Link para o WhatsApp</h1>
-    <form name="formulario">
-      <label for="numero">Número: </label>
-      <input type="text" name="numero" id="numero"> <br>
-      <label for="mensagem">Mensagem: </label>
-      <input type="text" name="mensagem" id="mensagem"> <br>
-      <button type="button" onclick="gerarLink()">Gerar Link</button>
-    </form>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
 
-    <script src="linkwhatsapp.js"></script>
-</body>
+        <title>Gerador de Link para o WhatsApp</title>
+
+    </head>
+    <body>
+        
+        <h1 class="titulo">Gerador de Link para o WhatsApp</h1>
+        <form name="formulario">
+        <div>
+            <label for="numero" class="numero">Número: </label><br>
+            <input type="text" name="numero" id="numero"> 
+        </div>
+        <div>
+            <label for="mensagem" class="mensagem">Mensagem: </label><br>
+            <input type="text" name="mensagem" id="mensagem"> 
+        </div>
+        
+        <button type="button" class="botao" onclick="gerarLink()">Gerar Link</button>
+        </form>
+        
+    </body>
+    
+    <script src="js/linkwhatsapp.js"></script>
+
 </html>
